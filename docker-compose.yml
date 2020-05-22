@@ -1,0 +1,11 @@
+version: "2.0"
+
+services:
+  android-kitchen:
+    container_name: android-kitchen
+    image: alexandreoda/android-kitchen
+    restart: "no"
+    privileged: false
+    volumes:
+      - "${HOME}:/home/android-kitchen"
+      - "/dev/bus/usb:/dev/bus/usb"
