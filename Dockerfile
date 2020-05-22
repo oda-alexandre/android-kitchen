@@ -5,6 +5,7 @@ LABEL authors https://www.oda-alexandre.com
 ENV USER kitchen
 ENV HOME /home/${USER}
 ENV APP https://github.com/dsixda/Android-Kitchen.git
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   apt update && apt install -y --no-install-recommends \
