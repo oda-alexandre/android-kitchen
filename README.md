@@ -41,7 +41,7 @@ Use [docker](https://www.docker.com)
 ### DOCKER RUN
 
 ```\
-docker run -d \
+docker run -ti \
 --name android-kitchen \
 -v ${HOME}:/home/android-kitchen \
 -v /dev/bus/usb:/dev/bus/usb \
